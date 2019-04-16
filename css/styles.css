@@ -70,6 +70,10 @@ legend {
   padding-bottom: 1.2em;
 }
 
+fieldset:last-of-type span {
+  padding-bottom: 0.4em;
+}
+
 fieldset {
   border: none;
   display: inline-block;
@@ -147,4 +151,31 @@ input::placeholder {
   weight: 300;
   min-width: 0;
   text-align: right;
+}
+
+button[type="submit"] {
+  color: white;
+  background-color: rgba(77, 186, 181, 1.00);
+  border-radius: 3px;
+  display: block;
+  margin: auto;
+  min-width: 90%;
+  padding: 1em 0;
+  font-size: 1.2em;
+}
+
+textarea {
+  margin-top: 1em;
+  background-color: rgba(239, 240, 241, 1.00);
+  min-width: 100%;
+  border: none;
+  border-radius: 3px;
+  padding: 2em 0;
+
+}
+
+footer {
+  margin: 1em auto 4em;
+  font-style: italic;
+  font-size: 0.8em;
 }
