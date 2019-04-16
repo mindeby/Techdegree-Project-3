@@ -22,7 +22,7 @@
     </header>
 
     <form action="index.html" method="post">
-      <fieldset>
+      <fieldset class="clearfix">
         <legend>Contact Information</legend>
         <label for="Full Name">Full Name</label>
         <input type="text" id="Full Name" name="user_full_name" placeholder="Required">
@@ -66,25 +66,31 @@
 
       <fieldset>
         <legend>Newsletter</legend>
-        <span> Select the newsletters you would like to receive</span>
+        <span> Select the newsletters you would like to receive<br></br></span>
 
-        <label for="HTML">HTML News</label>
-        <input type="checkbox" id="HTML" value="html_news" name="user_html_news">
-        <label for="CSS">CSS News</label>
-        <input type="checkbox" id="CSS" value="css_news" name="user_css_news">
-        <label for="JAVA">Javascript News</label>
-        <input type="checkbox" id="JAVA" value="java_news" name="user_java_news">
 
-        <label for="HtmlFormat">HTML</label>
-        <input type="radio" id="HtmlFormat" value="html" name="user_format">
-        <label for="PlainTextFormat">Plain Text</label>
-        <input type="radio" id="PlainTextFormat" value="plain_text" name="user_format">
+          <input type="checkbox" id="HTML" value="html_news" name="user_html_news">
+          <label for="HTML">HTML News</label><br></br>
 
-        <label for="Others"><span>Other topics you'd like to hear about</span></label>
-        <textarea id="Others" name="other_topics"></textarea>
+          <input type="checkbox" id="CSS" value="css_news" name="user_css_news">
+          <label for="CSS">CSS News</label><br></br>
+
+          <input type="checkbox" id="JAVA" value="java_news" name="user_java_news">
+          <label for="JAVA">Javascript News</label><br></br>
+
+
+          <span>Newsletter Format</span><br></br>
+
+          <input type="radio" id="HtmlFormat" value="html" name="user_format">
+          <label for="HtmlFormat">HTML</label><br></br>
+          <input type="radio" id="PlainTextFormat" value="plain_text" name="user_format">
+          <label for="PlainTextFormat">Plain Text</label><br></br>
+
+          <label for="Others"><span>Other topics you'd like to hear about</span></label>
+          <textarea id="Others" name="other_topics"></textarea>
       </fieldset>
 
-      <button type="submit">Sign Up</button>
+        <button type="submit">Sign Up</button>
 
     </form>
 
