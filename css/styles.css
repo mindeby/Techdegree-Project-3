@@ -157,7 +157,7 @@ button[type="submit"] {
   background-color: rgba(77, 186, 181, 1.00);
   border-radius: 3px;
   display: block;
-  margin: auto;
+  margin: auto auto 2em auto;
   min-width: 90%;
   padding: 1em 0;
   font-size: 1.2em;
@@ -179,6 +179,13 @@ footer {
   font-size: 0.8em;
   text-align: center;
 }
+
+.news, .format {
+  line-height: 2em;
+
+}
+
+
 
 /* media queries */
 
@@ -223,7 +230,7 @@ footer {
     align-self: center;
   }
 
-  input[type="zip"]{
+  input[type="number"]{
     justify-content: flex-start;
     margin-right: 40%;
     width: 30%;
