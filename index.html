@@ -17,8 +17,10 @@
 
     <header>
       <h1>The Code Review</h1>
-      <h2>Signup for our newsletter</h2>
-      <span>Get the latest news on how your code is doing right in your inbox</span>
+      <div class="bottom_border">
+        <h2>Signup for our newsletter</h2>
+        <span>Get the latest news on how your code is doing right in your inbox</span>
+      </div>
     </header>
 
     <form action="index.html" method="post">
@@ -61,30 +63,35 @@
 
 
       </fieldset>
+      <div class="top_border">
 
+      </div>
 
 
       <fieldset>
         <legend>Newsletter</legend>
-        <span> Select the newsletters you would like to receive<br></br></span>
 
+        <div class="news">
+            <span> Select the newsletters you would like to receive<br></br></span>
+            <input type="checkbox" id="HTML" value="html_news" name="user_html_news">
+            <label for="HTML">HTML News</label><br></br>
 
-          <input type="checkbox" id="HTML" value="html_news" name="user_html_news">
-          <label for="HTML">HTML News</label><br></br>
+            <input type="checkbox" id="CSS" value="css_news" name="user_css_news">
+            <label for="CSS">CSS News</label><br></br>
 
-          <input type="checkbox" id="CSS" value="css_news" name="user_css_news">
-          <label for="CSS">CSS News</label><br></br>
+            <input type="checkbox" id="JAVA" value="java_news" name="user_java_news">
+            <label for="JAVA">Javascript News</label><br></br>
+        </div>
 
-          <input type="checkbox" id="JAVA" value="java_news" name="user_java_news">
-          <label for="JAVA">Javascript News</label><br></br>
-
-
+        <div class="format">
           <span>Newsletter Format</span><br></br>
 
           <input type="radio" id="HtmlFormat" value="html" name="user_format">
           <label for="HtmlFormat">HTML</label><br></br>
           <input type="radio" id="PlainTextFormat" value="plain_text" name="user_format">
           <label for="PlainTextFormat">Plain Text</label><br></br>
+
+        </div>
 
           <label for="Others"><span>Other topics you'd like to hear about</span></label>
           <textarea id="Others" name="other_topics"></textarea>
