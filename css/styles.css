@@ -81,12 +81,10 @@ legend {
 
 fieldset {
   border: none;
-  display: inline-block;
-  flex-wrap: wrap;
 }
 
 
-.container, fieldset:first-of-type {
+.container, fieldset:first-of-type, .label_input {
   display: flex;
   flex-direction: column;
   flex:1;
@@ -97,14 +95,16 @@ fieldset {
 }
 
 input[type="checkbox"],input[type="radio"]{
+    display: inline;
     flex-wrap: wrap;
     min-width: 0;
     margin:0.2em;
+    width:1em;
 }
 
 fieldset:first-of-type label{
   padding: 0.4em;
-  text-align: left;
+  align-self: flex-start;
 }
 
 fieldset:first-of-type {
@@ -120,31 +120,12 @@ fieldset:first-of-type {
 
 
 
-
-input:last-child{
-  justify-content: flex-start;
-  margin-right: auto;
-  align-self: flex-start;
-  min-width: 0;
-  max-width: 50%;
-}
-
-input {
+select, input {
   padding: 0.6em;
   background-color: rgba(239, 240, 241, 1.00);
   border-radius: 5px;
-  min-width: 100%;
-  font-size: 1.2em;
-  border:none;
-}
-
-
-select {
-  padding: 0.6em;
-  background-color: rgba(239, 240, 241, 1.00);
-  border-radius: 5px;
-  min-width: 100%;
-  font-size: 1.2em;
+  width: 100%;
+  font-size: 1.1em;
   border:none;
   color: rgba(179, 184, 187, 1.00);
 }
@@ -163,6 +144,14 @@ input::placeholder {
   weight: 300;
   min-width: 0;
   text-align: right;
+}
+
+input[type="zip"]{
+  justify-content: flex-start;
+  margin-right: auto;
+  align-self: flex-start;
+  min-width: 0;
+  max-width: 50%;
 }
 
 button[type="submit"] {
@@ -190,4 +179,53 @@ footer {
   margin: 1em auto 4em;
   font-style: italic;
   font-size: 0.8em;
+}
+
+/* media queries */
+
+@media (min-width: 768px) {
+
+
+  .breakpoint_container, fieldset {
+    max-width: 600px;
+    margin: auto;
+  }
+
+  .bottom_border {
+    width: 100%;
+  }
+
+
+  button[type="submit"] {
+    min-width: 100%;
+  }
+
+  .label_input {
+    display: flex;
+    flex-direction: row;
+    flex:0;
+    flex-wrap: wrap;
+  }
+
+  fieldset:first-child input, fieldset:first-child label {
+    flex-direction: row;
+  }
+
+  fieldset:first-child input, select {
+    max-width: 70%;
+  }
+
+  fieldset:first-child label {
+    max-width: 30%;
+    margin-right: auto;
+  }
+
+  input[type="zip"]{
+    justify-content: flex-start;
+    margin-right: 0;
+    align-self:auto;
+    min-width: 0;
+    max-width: 50%;
+  }
+
 }
