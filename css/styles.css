@@ -53,9 +53,7 @@ header {
 }
 
 
-
-
-header span {
+.text_span {
   color: rgba(157, 163, 167, 1.00);
   flex-wrap: wrap;
   font-size: 0.9em;
@@ -98,7 +96,7 @@ input[type="checkbox"],input[type="radio"]{
     display: inline;
     flex-wrap: wrap;
     min-width: 0;
-    margin:0.2em;
+    margin:0.4em;
     width:1em;
 }
 
@@ -141,12 +139,12 @@ input::placeholder {
   font-style: italic;
   color: rgba(179, 184, 187, 1.00);
   font-size: 0.7em;
-  weight: 300;
+  font-weight: 300;
   min-width: 0;
   text-align: right;
 }
 
-input[type="zip"]{
+input[type="number"]{
   justify-content: flex-start;
   margin-right: auto;
   align-self: flex-start;
@@ -179,6 +177,7 @@ footer {
   margin: 1em auto 4em;
   font-style: italic;
   font-size: 0.8em;
+  text-align: center;
 }
 
 /* media queries */
