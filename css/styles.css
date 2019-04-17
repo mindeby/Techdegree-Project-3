@@ -186,13 +186,16 @@ footer {
 @media (min-width: 768px) {
 
 
-  .breakpoint_container, fieldset {
+  .breakpoint_container, fieldset, form {
     max-width: 600px;
+    width: 100%;
     margin: auto;
+    padding: 0;
   }
 
-  .bottom_border {
+  .bottom_border, .top_border {
     width: 100%;
+    max-width: 100%;
   }
 
 
@@ -218,14 +221,17 @@ footer {
   fieldset:first-child label {
     max-width: 30%;
     margin-right: auto;
+    align-self: center;
   }
 
   input[type="zip"]{
     justify-content: flex-start;
-    margin-right: 0;
-    align-self:auto;
-    min-width: 0;
-    max-width: 50%;
+    margin-right: 40%;
+    width: 30%;
+  }
+
+  textarea {
+    margin-bottom: 2em;
   }
 
 }
