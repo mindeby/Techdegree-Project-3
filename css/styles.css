@@ -127,7 +127,7 @@ input:focus, select:focus{
 }
 
 textarea:focus{
-  color: white;
+  color: black;
   background-color: rgba(206, 234, 232, 1.00);
   border: solid 2px rgba(45, 57, 69, 1.00);
   outline: none;
