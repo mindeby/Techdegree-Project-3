@@ -202,9 +202,6 @@ label:hover {
 
 @media (min-width: 768px) {
 
-  body {
-    background-color: rgba(206, 234, 232, 1.00);
-  }
 
 
   .breakpoint_container, fieldset, form {
